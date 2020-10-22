@@ -34,9 +34,11 @@ public class DimitrovCasesApproach
         switch(inputZone)
         {
             case "1":
+            zoneSelection = 1;
             return basePriceInEur = 2;
 
             case "2":
+            zoneSelection = 2;
             return basePriceInEur = 2.8;
 
             default:

@@ -57,9 +57,11 @@ public class DimitrovIfElseApproach
         // Diese Variable basePrice gibt es, weil ich sie ganz oben deklariert habe. Hätte ich sie innerhalb dieser Methode deklariert, 
         // könnte ich auch nur innerhalb dieser Methode darauf zugreifen und sie ändern. Wann immer nichts anderes notwendig ist sollte
         // man das auch tun. Hier brauche ich den Wert aber später in einer anderen Methode, deshab so. Wird irgendwas anderes als
-        // 1 oder 2 eingegeben, gibt die Methode 0 zurück (nicht null, aber das ist auch nochmal was anderes :-) )        
-        if(inputZone.equals("1")) return basePriceInEur = 2;
-        else if (inputZone.equals("2")) return basePriceInEur = 2.8;
+        // 1 oder 2 eingegeben, gibt die Methode 0 zurück (nicht null, aber das ist auch nochmal was anderes :-) )     
+        // Die Zone Selection wird gesetzt, damit sie später in der Ausgabe wie gefordert abgerufen werden kann, für die Programm-
+        // logik wäre es nicht notwendig   
+        if(inputZone.equals("1")) {zoneSelection = 1; return basePriceInEur = 2; }
+        else if (inputZone.equals("2")) {zoneSelection = 2; return basePriceInEur = 2.8;}
         else return 0;
     }
 
