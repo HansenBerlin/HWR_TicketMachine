@@ -46,7 +46,7 @@ public class App
             }
         }    
 
-
+// test delet
 
         // Vom Ablauf her passiert hier das gleiche, guckt aber in die Klasse (Datei) DimitrovCasesApproach rein
         // Da kommentiere ich den Unterschied
