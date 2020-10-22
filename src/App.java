@@ -6,12 +6,8 @@ public class App
     {
         // Öffnet mal die Datei DimitrovIfElseApproach zuerst und lest da die Kommentare. Danach dann hier weiter :-)
 
-        // könnt ihr ignorieren
-        String ANSI_YELLOW = "\u001B[33m";
-        String ANSI_RESET = "\u001B[0m";
-
-        // das auch
-        System.out.println(ANSI_YELLOW + "First Solution: If Else Statements" + ANSI_RESET);
+        // das könnt ihr ignorieren
+        System.out.println("\n" + "FIRST SOLUTION: IF ELSE (DIMITROV)" + "\n");
         
         // da ich hier 4 Lösungen ausprobiere, sind diese jeweils in einer eigenen Klasse erstellt
         // Klassen sind Dateien mit einer klar definierten Funktion. Sie haben Eigenschaften und
@@ -46,11 +42,10 @@ public class App
             }
         }    
 
-// test delet
 
         // Vom Ablauf her passiert hier das gleiche, guckt aber in die Klasse (Datei) DimitrovCasesApproach rein
         // Da kommentiere ich den Unterschied
-        System.out.println(ANSI_YELLOW + "Second Solution: Switch/Case" + ANSI_RESET);
+        System.out.println("\n" + "SECOND SOLUTION: SWITCH (DIMITROV)" + "\n");
         
         DimitrovCasesApproach secondSolution = new DimitrovCasesApproach();
         
@@ -70,10 +65,10 @@ public class App
             }
         }
 
-
+        
+        System.out.println("\n" + "THIRD SOLUTION: ADVANCED (HANNES)" + "\n");
         // Dieser Versuch ist für etwas Fortgeschrittene und deckt mehr ab als in der Anforderung stand. Vielleicht habt ihr trotzdem Lust es nachzuvollziehen.
         // Dann weiter in Datei/Klasse HannesApproachOnlyValidInput
-        System.out.println(ANSI_YELLOW + "Third Solution (Addon): Switch with If Else, No termination on invalid inputs, Clean injection of Parameters" + ANSI_RESET);
         
         // Wenn ihr die Kommentare in der Klasse gelesen habt versteht ihr vielleicht was die Werte in den Klammern sind. Die Grundpreise und die Multiplikatoren.
         // Vorteil: Die kann ich jetzt ändern (z.B. wenn sich der Grundpreis auf 2.9 ändert) und alles funktioniert weiterhin
@@ -86,7 +81,7 @@ public class App
 
         // Letzter Versuch: Ignorieren aller Best Practices und versuchen, das Ergebnis mit möglich wenig Code abzudecken und trotdem alle Anforderungen zu erfüllen
         // Kommentare in HannesShortApproach
-        System.out.println(ANSI_YELLOW + "Fourth Solution: Very small sourcecode, ignoring any best practices in program architecture" + ANSI_RESET);
+        System.out.println("\n" + "FOURTH SOLUTION: SHORT (HANNES)" + "\n");
 
         Console con = System.console();
         HannesShortApproach fourthSolution = new HannesShortApproach(con.readLine("Zone: "), con.readLine("Ticket Type: "));
