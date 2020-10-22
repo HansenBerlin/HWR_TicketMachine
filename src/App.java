@@ -1,4 +1,5 @@
 import java.io.Console;
+import java.util.Scanner;
 
 public class App 
 {
@@ -83,7 +84,9 @@ public class App
         // Kommentare in HannesShortApproach
         System.out.println("\n" + "FOURTH SOLUTION: SHORT (HANNES)" + "\n");
 
-        Console con = System.console();
-        HannesShortApproach fourthSolution = new HannesShortApproach(con.readLine("Zone: "), con.readLine("Ticket Type: "));
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please type zone type (1 or 2) and ticket type (1, 2 or 3) in next line");
+        HannesShortApproach fourthSolution = new HannesShortApproach(input.nextLine(), input.nextLine());
+        input.close();
     }
 }
